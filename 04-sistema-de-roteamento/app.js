@@ -1,8 +1,8 @@
 const express = require("express")
-const router = require("./routes/script.js")
+const seriesRouter = require("./routes/series")
 const app = express()
 const port = 3000
 
-app.use("/", router)
+app.use("/series", seriesRouter)
 
 app.listen(port, () => console.log(`Servidor rodando com sucesso na porta ${port}`))
