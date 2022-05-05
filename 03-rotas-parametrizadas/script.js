@@ -13,6 +13,6 @@ const series = [
 
 app.get("/series", (req, res) =>  res.send(series))
 
-app.get("/series/:id", (req, res) =>  res.send(series.filter(serie => serie.id == req.params.id)))
+app.get("/series/:id", (req, res) =>  res.send(series.filter(serie => serie.id == req.params.id)[0]))
 
 app.listen(3000, () => console.log("Servidor rodando na porta 3000"))
