@@ -1,11 +1,13 @@
 const series = [
     {
       id: 1,
-      nome: 'Irmão do Jorel'
+      nome: 'Irmão do Jorel',
+      genero: "Infantil"
     },
     {
       id: 2,
-      nome: 'Um maluco no pedaço'
+      nome: 'Um maluco no pedaço',
+      genero: "Comédia"
     }
 ];
 
